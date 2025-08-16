@@ -130,3 +130,37 @@ function drawAcademicsChart(){
 }
 window.addEventListener('DOMContentLoaded', drawAcademicsChart);
 window.addEventListener('resize', drawAcademicsChart);
+
+    // Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // lower is faster
+
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const increment = Math.ceil(target / speed);
+
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target.toLocaleString(); // adds commas like 250,000
+          }
+        };
+        updateCount();
+      });
+    };
+
+    // Run animation when section is visible
+    let started = false;
+    window.addEventListener('scroll', () => {
+      const section = document.querySelector('.counter-section');
+      const sectionTop = section.offsetTop - window.innerHeight + 100;
+
+      if (!started && window.scrollY > sectionTop) {
+        animateCounters();
+        started = true;
+      }
+    });
