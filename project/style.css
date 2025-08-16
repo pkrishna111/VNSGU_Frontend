@@ -40,7 +40,7 @@ body{
 .navbar .btn-auth:hover{filter:brightness(1.05)}
 
 /* ===== Hero / Carousel ===== */
-.carousel-item img{height:72vh; object-fit:cover; filter:brightness(.8)}
+.carousel-item img{height:50vh; object-fit:cover; filter:brightness(.5)}
 .carousel-caption{bottom:18%}
 .carousel-caption h3{font-size:2.2rem; font-weight:700; text-shadow:0 10px 25px rgba(0,0,0,.6)}
 .carousel-caption p{font-size:1.05rem}

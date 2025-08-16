@@ -10,7 +10,10 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary shadow-soft fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">ICT - VNSGU</a>
+   <a class="navbar-brand" href="index.html">
+    <img src="assets/vnsgu-logo.png" alt="Logo" height="30" width="120">
+      ICT - VNSGU
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmain">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,8 +21,8 @@
       <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-        <li class="nav-item" id="auth-area"></li>
-        <li class="nav-item" id="auth-right"></li>
+        <!-- <li class="nav-item" id="auth-area"></li>
+        <li class="nav-item" id="auth-right"></li> -->
       </ul>
     </div>
   </div>
@@ -49,7 +52,7 @@
             <label class="form-label">Confirm Password</label>
             <input id="regPass2" type="password" class="form-control" placeholder="repeat password" required minlength="6">
           </div>
-          <div class="col-12">
+          <div class="col-12 d-flex align-items-center justify-content-between">
             <button class="btn btn-gradient">Create Account</button>
             <a class="ms-3" href="login.html">Already have an account?</a>
           </div>
@@ -59,11 +62,11 @@
   </div>
 </section>
 
-<footer class="bg-gradient-primary">
+<footer class="bg-gradient-primary fixed-bottom">
   <div class="container py-4 text-center text-md-start">
     <div class="row align-items-center">
       <div class="col-md-8">© 2025 Department of ICT – Veer Narmad South Gujarat University</div>
-      <div class="col-md-4 text-md-end"><a href="index.html">Home</a></div>
+      <div class="col-md-4 text-md-end"><a href="about.html">About</a> • <a href="contact.html">Contact</a></div>
     </div>
   </div>
 </footer>
